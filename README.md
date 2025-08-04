@@ -5,6 +5,28 @@ Ce projet s’inscrit dans le programme Holberton School et couvre les bases ess
 
 ---
 
+## ✅ Requirements
+
+- **Système d’exploitation** : Ubuntu 20.04 LTS  
+- **Éditeurs autorisés** : `vi`, `vim`, `emacs`  
+- **Compilation** :  
+  ```bash
+  gcc -Wall -Wextra -Werror -pedantic -std=gnu89
+  ```
+- **Style** :
+  - Tous les fichiers doivent finir par une nouvelle ligne
+  - Respect du style Holberton/Betty (`betty-style.pl` et `betty-doc.pl`)
+  - Pas de variables globales
+  - Pas plus de 5 fonctions par fichier
+  - Standard C autorisé : C89
+- **Organisation** :
+  - Tous les prototypes doivent être dans le fichier d’en-tête `binary_trees.h`
+  - Header files protégés contre les inclusions multiples
+  - Aucun fichier `main.c` à push (ils servent uniquement pour les tests)
+  - Utilisation autorisée de la librairie standard C
+
+---
+
 📄 **Fichiers et descriptions**
 
 | Fichier | Description |
@@ -39,3 +61,23 @@ Par exemple, pour compiler et tester la création d’un nœud :
 ```bash
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 binary_tree_print.c 0-main.c 0-binary_tree_node.c -o 0-node
 ./0-node
+```
+
+Pour chaque tâche, adapte la ligne de compilation selon le fichier principal à tester.
+
+---
+
+<details>
+<summary><b>Exemples de sortie attendue (cliquer pour afficher)</b></summary>
+
+<pre>
+       .-------(098)-------.
+  .--(012)--.         .--(402)--.
+(006)     (016)     (256)     (512)
+</pre>
+
+</details>
+
+---
+
+<p align="center"><b>Projet réalisé dans le cadre de la Holberton School</b></p>
